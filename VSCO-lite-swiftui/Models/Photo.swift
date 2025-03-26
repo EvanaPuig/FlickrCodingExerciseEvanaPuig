@@ -122,3 +122,10 @@ struct Photo: Codable, Identifiable {
             ]
         }
 }
+
+extension Photo {
+    var imageURL: URL? {
+        return URL(string: "https://live.staticflickr.com/\(server)/\(id)_\(secret).jpg")
+    }
+}
+
