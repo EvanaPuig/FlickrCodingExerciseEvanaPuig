@@ -22,12 +22,6 @@
 		5B03CCBC28EF50F000AFA693 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B03CCBB28EF50F000AFA693 /* MainView.swift */; };
 		5B03CCBE28EF510800AFA693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B03CCBD28EF510800AFA693 /* Assets.xcassets */; };
 		5B03CCC128EF510800AFA693 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B03CCC028EF510800AFA693 /* Preview Assets.xcassets */; };
-		5B15E5FB28F0E95B00F90A7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B15E5FA28F0E95B00F90A7C /* AppDelegate.swift */; };
-		5B15E5FD28F0E95B00F90A7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B15E5FC28F0E95B00F90A7C /* SceneDelegate.swift */; };
-		5B15E5FF28F0E95B00F90A7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B15E5FE28F0E95B00F90A7C /* ViewController.swift */; };
-		5B15E60228F0E95B00F90A7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B15E60028F0E95B00F90A7C /* Main.storyboard */; };
-		5B15E60428F0E95C00F90A7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B15E60328F0E95C00F90A7C /* Assets.xcassets */; };
-		5B15E60728F0E95C00F90A7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B15E60528F0E95C00F90A7C /* LaunchScreen.storyboard */; };
 		5B15E60C28F0EA2800F90A7C /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C9F4328EF8046004442E3 /* FlickrAPI.swift */; };
 		5B15E60D28F0EA2A00F90A7C /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C9F4028EF8016004442E3 /* DataProvider.swift */; };
 		5B4B786628F7830B0096A395 /* URRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4B786528F7830B0096A395 /* URRequest.swift */; };
@@ -54,13 +48,6 @@
 		5B03CCBD28EF510800AFA693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B03CCC028EF510800AFA693 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5B15E5F828F0E95B00F90A7C /* VSCO-lite-uikit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VSCO-lite-uikit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B15E5FA28F0E95B00F90A7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B15E5FC28F0E95B00F90A7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5B15E5FE28F0E95B00F90A7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5B15E60128F0E95B00F90A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5B15E60328F0E95C00F90A7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5B15E60628F0E95C00F90A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5B15E60828F0E95C00F90A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B4B786528F7830B0096A395 /* URRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URRequest.swift; sourceTree = "<group>"; };
 		5B9C9F4028EF8016004442E3 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		5B9C9F4328EF8046004442E3 /* FlickrAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
@@ -136,7 +123,6 @@
 			children = (
 				5B15E5F328F0E90600F90A7C /* Common */,
 				5B03CCB828EF50F000AFA693 /* VSCO-lite-swiftui */,
-				5B15E5F928F0E95B00F90A7C /* VSCO-lite-uikit */,
 				5B03CCB728EF50F000AFA693 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -181,20 +167,6 @@
 				5B4B786528F7830B0096A395 /* URRequest.swift */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		5B15E5F928F0E95B00F90A7C /* VSCO-lite-uikit */ = {
-			isa = PBXGroup;
-			children = (
-				5B15E5FA28F0E95B00F90A7C /* AppDelegate.swift */,
-				5B15E5FC28F0E95B00F90A7C /* SceneDelegate.swift */,
-				5B15E5FE28F0E95B00F90A7C /* ViewController.swift */,
-				5B15E60028F0E95B00F90A7C /* Main.storyboard */,
-				5B15E60328F0E95C00F90A7C /* Assets.xcassets */,
-				5B15E60528F0E95C00F90A7C /* LaunchScreen.storyboard */,
-				5B15E60828F0E95C00F90A7C /* Info.plist */,
-			);
-			path = "VSCO-lite-uikit";
 			sourceTree = "<group>";
 		};
 		5B9C9F4228EF8037004442E3 /* API */ = {
@@ -293,9 +265,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B15E60728F0E95C00F90A7C /* LaunchScreen.storyboard in Resources */,
-				5B15E60428F0E95C00F90A7C /* Assets.xcassets in Resources */,
-				5B15E60228F0E95B00F90A7C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,35 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B15E5FF28F0E95B00F90A7C /* ViewController.swift in Sources */,
-				5B15E5FB28F0E95B00F90A7C /* AppDelegate.swift in Sources */,
 				5B15E60D28F0EA2A00F90A7C /* DataProvider.swift in Sources */,
-				5B15E5FD28F0E95B00F90A7C /* SceneDelegate.swift in Sources */,
 				5B4B786728F7830B0096A395 /* URRequest.swift in Sources */,
 				5B15E60C28F0EA2800F90A7C /* FlickrAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		5B15E60028F0E95B00F90A7C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5B15E60128F0E95B00F90A7C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5B15E60528F0E95C00F90A7C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5B15E60628F0E95C00F90A7C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5B03CCC228EF510800AFA693 /* Debug */ = {
