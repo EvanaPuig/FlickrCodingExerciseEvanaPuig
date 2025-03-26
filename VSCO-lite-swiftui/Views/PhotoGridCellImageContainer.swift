@@ -5,13 +5,18 @@
 //  Created by Evana Margain Puig on 24/03/25.
 //
 
+import Kingfisher
 import SwiftUI
 
 struct PhotoGridCellImageContainer: View {
     let photo: Photo
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        KFImage(photo.imageURL)
+           // set photo display characteristics
+           .resizable()
+           .aspectRatio(contentMode: .fit)
+           .cornerRadius(10.0)
     }
 }
 
