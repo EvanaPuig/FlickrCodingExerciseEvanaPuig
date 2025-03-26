@@ -35,10 +35,6 @@ struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             MainView(viewModel: ViewModel())
-            
-            /* Landscape {
-                MainView(viewModel: ViewModel())
-            } */
         }
     }
 }
