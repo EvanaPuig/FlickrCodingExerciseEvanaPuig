@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2012F83B2D921D6D00C59781 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012F83A2D921D6700C59781 /* SearchBar.swift */; };
+		2012F8402D921E8400C59781 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012F83F2D921E8100C59781 /* ViewModel.swift */; };
+		2012F8442D9226D500C59781 /* EmptySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012F8432D9226D500C59781 /* EmptySection.swift */; };
+		2012F8472D9227A300C59781 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012F8462D92279A00C59781 /* Photo.swift */; };
 		5B03CCBA28EF50F000AFA693 /* VSCOLiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B03CCB928EF50F000AFA693 /* VSCOLiteApp.swift */; };
 		5B03CCBC28EF50F000AFA693 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B03CCBB28EF50F000AFA693 /* MainView.swift */; };
 		5B03CCBE28EF510800AFA693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B03CCBD28EF510800AFA693 /* Assets.xcassets */; };
@@ -26,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2012F83A2D921D6700C59781 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		2012F83F2D921E8100C59781 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		2012F8432D9226D500C59781 /* EmptySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySection.swift; sourceTree = "<group>"; };
+		2012F8462D92279A00C59781 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		5B03CCB628EF50F000AFA693 /* VSCO-lite-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VSCO-lite-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B03CCB928EF50F000AFA693 /* VSCOLiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSCOLiteApp.swift; sourceTree = "<group>"; };
 		5B03CCBB28EF50F000AFA693 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -62,6 +70,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2012F83C2D921E2C00C59781 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2012F83F2D921E8100C59781 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2012F83D2D921E3F00C59781 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5B03CCBB28EF50F000AFA693 /* MainView.swift */,
+				2012F8432D9226D500C59781 /* EmptySection.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2012F83E2D921E6000C59781 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2012F83A2D921D6700C59781 /* SearchBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2012F8452D92278F00C59781 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2012F8462D92279A00C59781 /* Photo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		5B03CCAD28EF50F000AFA693 = {
 			isa = PBXGroup;
 			children = (
@@ -84,8 +125,11 @@
 		5B03CCB828EF50F000AFA693 /* VSCO-lite-swiftui */ = {
 			isa = PBXGroup;
 			children = (
+				2012F8452D92278F00C59781 /* Models */,
+				2012F83E2D921E6000C59781 /* Views */,
+				2012F83D2D921E3F00C59781 /* Screens */,
+				2012F83C2D921E2C00C59781 /* ViewModel */,
 				5B03CCB928EF50F000AFA693 /* VSCOLiteApp.swift */,
-				5B03CCBB28EF50F000AFA693 /* MainView.swift */,
 				5B03CCBD28EF510800AFA693 /* Assets.xcassets */,
 				5B03CCBF28EF510800AFA693 /* Preview Content */,
 			);
@@ -234,10 +278,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B4B786628F7830B0096A395 /* URRequest.swift in Sources */,
+				2012F8442D9226D500C59781 /* EmptySection.swift in Sources */,
 				5B9C9F4128EF8016004442E3 /* DataProvider.swift in Sources */,
+				2012F8472D9227A300C59781 /* Photo.swift in Sources */,
 				5B03CCBC28EF50F000AFA693 /* MainView.swift in Sources */,
 				5B03CCBA28EF50F000AFA693 /* VSCOLiteApp.swift in Sources */,
 				5B9C9F4428EF8046004442E3 /* FlickrAPI.swift in Sources */,
+				2012F83B2D921D6D00C59781 /* SearchBar.swift in Sources */,
+				2012F8402D921E8400C59781 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
