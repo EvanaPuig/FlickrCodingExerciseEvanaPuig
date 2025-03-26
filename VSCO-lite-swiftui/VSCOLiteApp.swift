@@ -2,11 +2,11 @@ import SwiftUI
 
 @main
 struct VSCOLiteApp: App {
-    @ObservedObject var viewModel = ViewModel()
+    @ObservedObject var viewModel = PhotoSearchViewModel()
     
     var body: some Scene {
         WindowGroup {
-            MainView(viewModel: viewModel)
+            PhotoSearchView()
         }
     }
 }

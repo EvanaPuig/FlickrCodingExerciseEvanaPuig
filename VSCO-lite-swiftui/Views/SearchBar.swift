@@ -8,7 +8,7 @@
 import SwiftUI
  
 struct SearchBar: View {
-    @ObservedObject var viewModel: ViewModel
+    @ObservedObject var viewModel: PhotoSearchViewModel
  
     @State private var isEditing = false
  
@@ -61,7 +61,7 @@ struct SearchBar: View {
 
 struct SearchBar_Previews: PreviewProvider {
     static var previews: some View {
-        SearchBar(viewModel: ViewModel())
+        SearchBar(viewModel: PhotoSearchViewModel())
             .previewLayout(.sizeThatFits)
     }
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PhotoGrid: View {
     
-    @ObservedObject var viewModel: ViewModel
+    @ObservedObject var viewModel: PhotoSearchViewModel
     
     var columnsAdaptive = [GridItem(.adaptive(minimum: 150, maximum: 300))]
     
@@ -28,6 +28,6 @@ struct PhotoGrid: View {
 
 struct PhotoGrid_Previews: PreviewProvider {
     static var previews: some View {
-        PhotoGrid(viewModel: ViewModel())
+        PhotoGrid(viewModel: PhotoSearchViewModel())
     }
 }

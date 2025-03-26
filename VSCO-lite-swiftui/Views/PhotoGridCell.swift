@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PhotoGridCell: View {
     
-    @ObservedObject var viewModel: ViewModel
+    @ObservedObject var viewModel: PhotoSearchViewModel
     
     let photo: Photo
     
@@ -30,6 +30,6 @@ struct PhotoGridCell: View {
 
 struct PhotoGridCell_Previews: PreviewProvider {
     static var previews: some View {
-        PhotoGridCell(viewModel: ViewModel(), photo: Photo.default)
+        PhotoGridCell(viewModel: PhotoSearchViewModel(), photo: Photo.default)
     }
 }

@@ -16,7 +16,7 @@ struct Photo: Codable, Identifiable {
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
-        case owner = "owner_name"
+        case owner
         case secret
         case server
         case title
@@ -90,13 +90,6 @@ struct Photo: Codable, Identifiable {
                     secret: "16e23aa717",
                     server: "65535",
                     title: "Night of 1000 Candles 2020 (in Explore - Thanks!)"
-                ),
-                Photo(
-                    id: "50732057441",
-                    owner: "96039744@N08",
-                    secret: "3e89f83589",
-                    server: "65535",
-                    title: "Bad weather"
                 ),
                 Photo(
                     id: "50732168417",
