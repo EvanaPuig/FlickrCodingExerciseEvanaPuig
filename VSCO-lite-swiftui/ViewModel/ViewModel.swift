@@ -12,7 +12,7 @@ import SwiftUI
 class ViewModel: ObservableObject {
     
     // TODO: will contain the photos fetched from Flickr
-    @Published var photos: [Photo] = []
+    @Published var photos: [Photo] = Photo.previewPhotos
     
     @Published var searchText: String = ""
     
