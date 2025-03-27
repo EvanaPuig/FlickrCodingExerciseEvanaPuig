@@ -9,7 +9,6 @@ struct FlickrAPI {
     
     /// Creates a URL request for fetching image data from Flickr
     /// - Parameter searchTerm: Images which title, description, or tags contain the `searchTerm` will be returned
-    /// - Parameter searchTerm: Images which title, description, or tags contain the `searchTerm` will be returned.
     /// - Returns: URLRequest
     func fetchImageRequest(searchTerm: String) -> URLRequest {
         let url = URL(string: Constants.BASE_URL + "/services/rest/")!
