@@ -8,26 +8,23 @@
 import SwiftUI
 
 struct PhotoGrid: View {
-    
-    @ObservedObject var viewModel: PhotoSearchViewModel
-    
-    var columnsAdaptive = [GridItem(.adaptive(minimum: 150, maximum: 300))]
+    var photos: [Photo]
     
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: columnsAdaptive, content: {
-                ForEach(viewModel.photos) {
-                    photo in
-                    PhotoGridCell(viewModel: viewModel, photo: photo)
+            LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2), spacing: 10) {
+                ForEach(photos) { photo in
+                    PhotoGridCell(photo: photo)
                 }
-            })
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
 struct PhotoGrid_Previews: PreviewProvider {
     static var previews: some View {
-        PhotoGrid(viewModel: PhotoSearchViewModel())
+        PhotoGrid(photos: Photo.previewPhotos)
+            .previewLayout(.sizeThatFits)
     }
 }

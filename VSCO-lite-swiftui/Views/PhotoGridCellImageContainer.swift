@@ -5,24 +5,33 @@
 //  Created by Evana Margain Puig on 24/03/25.
 //
 
-import Kingfisher
 import SwiftUI
+import Kingfisher
 
 struct PhotoGridCellImageContainer: View {
-    let photo: Photo
+    var url: URL?
     
     var body: some View {
-        KFImage(photo.imageURL)
-           // set photo display characteristics
-           .resizable()
-           .aspectRatio(contentMode: .fit)
-           .cornerRadius(10.0)
+        if let url = url {
+            KFImage(url)
+                .resizable()
+                .placeholder {
+                    Color.gray.opacity(0.3) // Placeholder while loading
+                        .frame(height: 150)
+                        .cornerRadius(8)
+                }
+                .scaledToFill()
+                .frame(height: 150)
+                .clipped()
+                .cornerRadius(8)
+        }
     }
 }
 
-struct CellPhotoView_Previews: PreviewProvider {
+struct PhotoGridCellImageContainer_Previews: PreviewProvider {
     static var previews: some View {
-        PhotoGridCellImageContainer(photo: Photo.default)
+        PhotoGridCellImageContainer(url: Photo.previewPhotos.first?.imageURL)
             .previewLayout(.sizeThatFits)
+            .padding()
     }
 }

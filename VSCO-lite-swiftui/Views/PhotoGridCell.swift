@@ -8,28 +8,17 @@
 import SwiftUI
 
 struct PhotoGridCell: View {
-    
-    @ObservedObject var viewModel: PhotoSearchViewModel
-    
-    let photo: Photo
+    var photo: Photo
     
     var body: some View {
-        ZStack {
-            // Show a progress view until the photo overlays it
-            ProgressView()
-            // Display the photo
-            PhotoGridCellImageContainer(photo: photo)
-                // set up for tap navigation
-                .onTapGesture {
-                    // do whatever is needed on tap
-                }
-        }
-        .padding()
+        PhotoGridCellImageContainer(url: photo.imageURL)
     }
 }
 
 struct PhotoGridCell_Previews: PreviewProvider {
     static var previews: some View {
-        PhotoGridCell(viewModel: PhotoSearchViewModel(), photo: Photo.default)
+        PhotoGridCell(photo: Photo.previewPhotos.first!)
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }
