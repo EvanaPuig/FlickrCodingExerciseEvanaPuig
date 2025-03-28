@@ -5,7 +5,11 @@ enum NetworkError: Error {
     case requestFailed
 }
 
-class DataProvider {
+protocol DataProviderProtocol {
+    func fetchData(for query: String, completion: @escaping (Result<String, Error>) -> Void)
+}
+
+class DataProvider: DataProviderProtocol {
     
     private struct Constants {
         static let DEFAULT_SEARCH_TERM = "sunset"

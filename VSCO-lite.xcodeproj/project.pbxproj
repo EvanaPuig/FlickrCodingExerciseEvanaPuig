@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2012F83B2D921D6D00C59781 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012F83A2D921D6700C59781 /* SearchBar.swift */; };
 		2012F8402D921E8400C59781 /* PhotoSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012F83F2D921E8100C59781 /* PhotoSearchViewModel.swift */; };
-		2012F8442D9226D500C59781 /* EmptySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012F8432D9226D500C59781 /* EmptySection.swift */; };
 		2012F8472D9227A300C59781 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012F8462D92279A00C59781 /* Photo.swift */; };
 		2012F8492D922B4200C59781 /* PhotoGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012F8482D922B4200C59781 /* PhotoGrid.swift */; };
 		2012F84B2D922B9800C59781 /* PhotoGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012F84A2D922B9800C59781 /* PhotoGridCell.swift */; };
@@ -30,10 +29,19 @@
 		5B9C9F4428EF8046004442E3 /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C9F4328EF8046004442E3 /* FlickrAPI.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2012F88F2D961FE500C59781 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B03CCAE28EF50F000AFA693 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B03CCB528EF50F000AFA693;
+			remoteInfo = "VSCO-lite-swiftui";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2012F83A2D921D6700C59781 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		2012F83F2D921E8100C59781 /* PhotoSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchViewModel.swift; sourceTree = "<group>"; };
-		2012F8432D9226D500C59781 /* EmptySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySection.swift; sourceTree = "<group>"; };
 		2012F8462D92279A00C59781 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		2012F8482D922B4200C59781 /* PhotoGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGrid.swift; sourceTree = "<group>"; };
 		2012F84A2D922B9800C59781 /* PhotoGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridCell.swift; sourceTree = "<group>"; };
@@ -41,6 +49,7 @@
 		2012F8522D93736700C59781 /* FlickrPhotosInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhotosInfoResponse.swift; sourceTree = "<group>"; };
 		2012F8542D9373AE00C59781 /* FlickrPhotosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhotosResponse.swift; sourceTree = "<group>"; };
 		2012F8562D9375A400C59781 /* FlickrError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrError.swift; sourceTree = "<group>"; };
+		2012F88B2D961FE500C59781 /* VSCO-lite-swiftuiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VSCO-lite-swiftuiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B03CCB628EF50F000AFA693 /* VSCO-lite-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VSCO-lite-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B03CCB928EF50F000AFA693 /* VSCOLiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSCOLiteApp.swift; sourceTree = "<group>"; };
 		5B03CCBB28EF50F000AFA693 /* PhotoSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchView.swift; sourceTree = "<group>"; };
@@ -52,7 +61,18 @@
 		5B9C9F4328EF8046004442E3 /* FlickrAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		2012F88C2D961FE500C59781 /* VSCO-lite-swiftuiTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "VSCO-lite-swiftuiTests"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		2012F8882D961FE500C59781 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5B03CCB328EF50F000AFA693 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -91,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				2012F83A2D921D6700C59781 /* SearchBar.swift */,
-				2012F8432D9226D500C59781 /* EmptySection.swift */,
 				2012F8482D922B4200C59781 /* PhotoGrid.swift */,
 				2012F84A2D922B9800C59781 /* PhotoGridCell.swift */,
 				2012F84C2D922C0900C59781 /* PhotoGridCellImageContainer.swift */,
@@ -115,6 +134,7 @@
 			children = (
 				5B15E5F328F0E90600F90A7C /* Networking */,
 				5B03CCB828EF50F000AFA693 /* VSCO-lite-swiftui */,
+				2012F88C2D961FE500C59781 /* VSCO-lite-swiftuiTests */,
 				5B03CCB728EF50F000AFA693 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,6 +144,7 @@
 			children = (
 				5B03CCB628EF50F000AFA693 /* VSCO-lite-swiftui.app */,
 				5B15E5F828F0E95B00F90A7C /* VSCO-lite-uikit.app */,
+				2012F88B2D961FE500C59781 /* VSCO-lite-swiftuiTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,6 +192,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2012F88A2D961FE500C59781 /* VSCO-lite-swiftuiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2012F8932D961FE500C59781 /* Build configuration list for PBXNativeTarget "VSCO-lite-swiftuiTests" */;
+			buildPhases = (
+				2012F8872D961FE500C59781 /* Sources */,
+				2012F8882D961FE500C59781 /* Frameworks */,
+				2012F8892D961FE500C59781 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2012F8902D961FE500C59781 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2012F88C2D961FE500C59781 /* VSCO-lite-swiftuiTests */,
+			);
+			name = "VSCO-lite-swiftuiTests";
+			packageProductDependencies = (
+			);
+			productName = "VSCO-lite-swiftuiTests";
+			productReference = 2012F88B2D961FE500C59781 /* VSCO-lite-swiftuiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5B03CCB528EF50F000AFA693 /* VSCO-lite-swiftui */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B03CCC428EF510800AFA693 /* Build configuration list for PBXNativeTarget "VSCO-lite-swiftui" */;
@@ -212,9 +256,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					2012F88A2D961FE500C59781 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 5B03CCB528EF50F000AFA693;
+					};
 					5B03CCB528EF50F000AFA693 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -241,11 +289,19 @@
 			targets = (
 				5B03CCB528EF50F000AFA693 /* VSCO-lite-swiftui */,
 				5B15E5F728F0E95B00F90A7C /* VSCO-lite-uikit */,
+				2012F88A2D961FE500C59781 /* VSCO-lite-swiftuiTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2012F8892D961FE500C59781 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5B03CCB428EF50F000AFA693 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,13 +321,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2012F8872D961FE500C59781 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5B03CCB228EF50F000AFA693 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5B4B786628F7830B0096A395 /* URRequest.swift in Sources */,
 				2012F8572D9375A900C59781 /* FlickrError.swift in Sources */,
-				2012F8442D9226D500C59781 /* EmptySection.swift in Sources */,
 				2012F8492D922B4200C59781 /* PhotoGrid.swift in Sources */,
 				2012F8532D93736F00C59781 /* FlickrPhotosInfoResponse.swift in Sources */,
 				5B9C9F4128EF8016004442E3 /* DataProvider.swift in Sources */,
@@ -299,7 +361,60 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2012F8902D961FE500C59781 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B03CCB528EF50F000AFA693 /* VSCO-lite-swiftui */;
+			targetProxy = 2012F88F2D961FE500C59781 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		2012F8912D961FE500C59781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evanapuig.VSCO-lite-swiftuiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VSCO-lite-swiftui.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VSCO-lite-swiftui";
+			};
+			name = Debug;
+		};
+		2012F8922D961FE500C59781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evanapuig.VSCO-lite-swiftuiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VSCO-lite-swiftui.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VSCO-lite-swiftui";
+			};
+			name = Release;
+		};
 		5B03CCC228EF510800AFA693 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -527,6 +642,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2012F8932D961FE500C59781 /* Build configuration list for PBXNativeTarget "VSCO-lite-swiftuiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2012F8912D961FE500C59781 /* Debug */,
+				2012F8922D961FE500C59781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5B03CCB128EF50F000AFA693 /* Build configuration list for PBXProject "VSCO-lite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

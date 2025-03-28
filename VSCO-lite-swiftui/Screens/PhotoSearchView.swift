@@ -16,15 +16,17 @@ struct PhotoSearchView: View {
     var body: some View {
         NavigationView {
             VStack {
-                TextField("Search Flickr Photos", text: $viewModel.searchText, onCommit: {
-                    viewModel.searchPhotos()
-                })
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
+                SearchBar(
+                    text: $viewModel.searchText,
+                    onSearch: {
+                        viewModel.searchPhotos()
+                    }
+                )
 
                 if viewModel.isLoading {
                     ProgressView("Loading...")
-                        .padding()
+                        .progressViewStyle(CircularProgressViewStyle())
+                        .frame(maxHeight: .infinity)
                 } else if let errorMessage = viewModel.errorMessage {
                     Text(errorMessage)
                         .foregroundColor(.red)
