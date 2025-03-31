@@ -3,20 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2012F83B2D921D6D00C59781 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012F83A2D921D6700C59781 /* SearchBar.swift */; };
+		2012F8402D921E8400C59781 /* PhotoSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012F83F2D921E8100C59781 /* PhotoSearchViewModel.swift */; };
+		2012F8472D9227A300C59781 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012F8462D92279A00C59781 /* Photo.swift */; };
+		2012F8492D922B4200C59781 /* PhotoGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012F8482D922B4200C59781 /* PhotoGrid.swift */; };
+		2012F84B2D922B9800C59781 /* PhotoGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012F84A2D922B9800C59781 /* PhotoGridCell.swift */; };
+		2012F84D2D922C0900C59781 /* PhotoGridCellImageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012F84C2D922C0900C59781 /* PhotoGridCellImageContainer.swift */; };
+		2012F8532D93736F00C59781 /* FlickrPhotosInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012F8522D93736700C59781 /* FlickrPhotosInfoResponse.swift */; };
+		2012F8552D9373B800C59781 /* FlickrPhotosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012F8542D9373AE00C59781 /* FlickrPhotosResponse.swift */; };
+		2012F8572D9375A900C59781 /* FlickrError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012F8562D9375A400C59781 /* FlickrError.swift */; };
+		2012F85D2D938C7100C59781 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2012F85C2D938C7100C59781 /* Kingfisher */; };
 		5B03CCBA28EF50F000AFA693 /* VSCOLiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B03CCB928EF50F000AFA693 /* VSCOLiteApp.swift */; };
-		5B03CCBC28EF50F000AFA693 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B03CCBB28EF50F000AFA693 /* MainView.swift */; };
+		5B03CCBC28EF50F000AFA693 /* PhotoSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B03CCBB28EF50F000AFA693 /* PhotoSearchView.swift */; };
 		5B03CCBE28EF510800AFA693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B03CCBD28EF510800AFA693 /* Assets.xcassets */; };
 		5B03CCC128EF510800AFA693 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B03CCC028EF510800AFA693 /* Preview Assets.xcassets */; };
-		5B15E5FB28F0E95B00F90A7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B15E5FA28F0E95B00F90A7C /* AppDelegate.swift */; };
-		5B15E5FD28F0E95B00F90A7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B15E5FC28F0E95B00F90A7C /* SceneDelegate.swift */; };
-		5B15E5FF28F0E95B00F90A7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B15E5FE28F0E95B00F90A7C /* ViewController.swift */; };
-		5B15E60228F0E95B00F90A7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B15E60028F0E95B00F90A7C /* Main.storyboard */; };
-		5B15E60428F0E95C00F90A7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B15E60328F0E95C00F90A7C /* Assets.xcassets */; };
-		5B15E60728F0E95C00F90A7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B15E60528F0E95C00F90A7C /* LaunchScreen.storyboard */; };
 		5B15E60C28F0EA2800F90A7C /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C9F4328EF8046004442E3 /* FlickrAPI.swift */; };
 		5B15E60D28F0EA2A00F90A7C /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C9F4028EF8016004442E3 /* DataProvider.swift */; };
 		5B4B786628F7830B0096A395 /* URRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4B786528F7830B0096A395 /* URRequest.swift */; };
@@ -25,30 +29,55 @@
 		5B9C9F4428EF8046004442E3 /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C9F4328EF8046004442E3 /* FlickrAPI.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2012F88F2D961FE500C59781 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B03CCAE28EF50F000AFA693 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B03CCB528EF50F000AFA693;
+			remoteInfo = "VSCO-lite-swiftui";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2012F83A2D921D6700C59781 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		2012F83F2D921E8100C59781 /* PhotoSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchViewModel.swift; sourceTree = "<group>"; };
+		2012F8462D92279A00C59781 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		2012F8482D922B4200C59781 /* PhotoGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGrid.swift; sourceTree = "<group>"; };
+		2012F84A2D922B9800C59781 /* PhotoGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridCell.swift; sourceTree = "<group>"; };
+		2012F84C2D922C0900C59781 /* PhotoGridCellImageContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridCellImageContainer.swift; sourceTree = "<group>"; };
+		2012F8522D93736700C59781 /* FlickrPhotosInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhotosInfoResponse.swift; sourceTree = "<group>"; };
+		2012F8542D9373AE00C59781 /* FlickrPhotosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhotosResponse.swift; sourceTree = "<group>"; };
+		2012F8562D9375A400C59781 /* FlickrError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrError.swift; sourceTree = "<group>"; };
+		2012F88B2D961FE500C59781 /* VSCO-lite-swiftuiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VSCO-lite-swiftuiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B03CCB628EF50F000AFA693 /* VSCO-lite-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VSCO-lite-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B03CCB928EF50F000AFA693 /* VSCOLiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSCOLiteApp.swift; sourceTree = "<group>"; };
-		5B03CCBB28EF50F000AFA693 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5B03CCBB28EF50F000AFA693 /* PhotoSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchView.swift; sourceTree = "<group>"; };
 		5B03CCBD28EF510800AFA693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B03CCC028EF510800AFA693 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5B15E5F828F0E95B00F90A7C /* VSCO-lite-uikit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VSCO-lite-uikit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B15E5FA28F0E95B00F90A7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B15E5FC28F0E95B00F90A7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5B15E5FE28F0E95B00F90A7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5B15E60128F0E95B00F90A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5B15E60328F0E95C00F90A7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5B15E60628F0E95C00F90A7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5B15E60828F0E95C00F90A7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B4B786528F7830B0096A395 /* URRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URRequest.swift; sourceTree = "<group>"; };
 		5B9C9F4028EF8016004442E3 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		5B9C9F4328EF8046004442E3 /* FlickrAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		2012F88C2D961FE500C59781 /* VSCO-lite-swiftuiTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "VSCO-lite-swiftuiTests"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		2012F8882D961FE500C59781 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5B03CCB328EF50F000AFA693 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2012F85D2D938C7100C59781 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +91,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2012F83C2D921E2C00C59781 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2012F83F2D921E8100C59781 /* PhotoSearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2012F83D2D921E3F00C59781 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5B03CCBB28EF50F000AFA693 /* PhotoSearchView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2012F83E2D921E6000C59781 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2012F83A2D921D6700C59781 /* SearchBar.swift */,
+				2012F8482D922B4200C59781 /* PhotoGrid.swift */,
+				2012F84A2D922B9800C59781 /* PhotoGridCell.swift */,
+				2012F84C2D922C0900C59781 /* PhotoGridCellImageContainer.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2012F8452D92278F00C59781 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2012F8562D9375A400C59781 /* FlickrError.swift */,
+				2012F8542D9373AE00C59781 /* FlickrPhotosResponse.swift */,
+				2012F8522D93736700C59781 /* FlickrPhotosInfoResponse.swift */,
+				2012F8462D92279A00C59781 /* Photo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		5B03CCAD28EF50F000AFA693 = {
 			isa = PBXGroup;
 			children = (
-				5B15E5F328F0E90600F90A7C /* Common */,
+				5B15E5F328F0E90600F90A7C /* Networking */,
 				5B03CCB828EF50F000AFA693 /* VSCO-lite-swiftui */,
-				5B15E5F928F0E95B00F90A7C /* VSCO-lite-uikit */,
+				2012F88C2D961FE500C59781 /* VSCO-lite-swiftuiTests */,
 				5B03CCB728EF50F000AFA693 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +144,7 @@
 			children = (
 				5B03CCB628EF50F000AFA693 /* VSCO-lite-swiftui.app */,
 				5B15E5F828F0E95B00F90A7C /* VSCO-lite-uikit.app */,
+				2012F88B2D961FE500C59781 /* VSCO-lite-swiftuiTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,8 +152,11 @@
 		5B03CCB828EF50F000AFA693 /* VSCO-lite-swiftui */ = {
 			isa = PBXGroup;
 			children = (
+				2012F8452D92278F00C59781 /* Models */,
+				2012F83E2D921E6000C59781 /* Views */,
+				2012F83D2D921E3F00C59781 /* Screens */,
+				2012F83C2D921E2C00C59781 /* ViewModel */,
 				5B03CCB928EF50F000AFA693 /* VSCOLiteApp.swift */,
-				5B03CCBB28EF50F000AFA693 /* MainView.swift */,
 				5B03CCBD28EF510800AFA693 /* Assets.xcassets */,
 				5B03CCBF28EF510800AFA693 /* Preview Content */,
 			);
@@ -100,28 +171,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5B15E5F328F0E90600F90A7C /* Common */ = {
+		5B15E5F328F0E90600F90A7C /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 				5B9C9F4028EF8016004442E3 /* DataProvider.swift */,
 				5B9C9F4228EF8037004442E3 /* API */,
 				5B4B786528F7830B0096A395 /* URRequest.swift */,
 			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		5B15E5F928F0E95B00F90A7C /* VSCO-lite-uikit */ = {
-			isa = PBXGroup;
-			children = (
-				5B15E5FA28F0E95B00F90A7C /* AppDelegate.swift */,
-				5B15E5FC28F0E95B00F90A7C /* SceneDelegate.swift */,
-				5B15E5FE28F0E95B00F90A7C /* ViewController.swift */,
-				5B15E60028F0E95B00F90A7C /* Main.storyboard */,
-				5B15E60328F0E95C00F90A7C /* Assets.xcassets */,
-				5B15E60528F0E95C00F90A7C /* LaunchScreen.storyboard */,
-				5B15E60828F0E95C00F90A7C /* Info.plist */,
-			);
-			path = "VSCO-lite-uikit";
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		5B9C9F4228EF8037004442E3 /* API */ = {
@@ -135,6 +192,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2012F88A2D961FE500C59781 /* VSCO-lite-swiftuiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2012F8932D961FE500C59781 /* Build configuration list for PBXNativeTarget "VSCO-lite-swiftuiTests" */;
+			buildPhases = (
+				2012F8872D961FE500C59781 /* Sources */,
+				2012F8882D961FE500C59781 /* Frameworks */,
+				2012F8892D961FE500C59781 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2012F8902D961FE500C59781 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2012F88C2D961FE500C59781 /* VSCO-lite-swiftuiTests */,
+			);
+			name = "VSCO-lite-swiftuiTests";
+			packageProductDependencies = (
+			);
+			productName = "VSCO-lite-swiftuiTests";
+			productReference = 2012F88B2D961FE500C59781 /* VSCO-lite-swiftuiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5B03CCB528EF50F000AFA693 /* VSCO-lite-swiftui */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B03CCC428EF510800AFA693 /* Build configuration list for PBXNativeTarget "VSCO-lite-swiftui" */;
@@ -176,9 +256,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					2012F88A2D961FE500C59781 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 5B03CCB528EF50F000AFA693;
+					};
 					5B03CCB528EF50F000AFA693 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -196,17 +280,28 @@
 				Base,
 			);
 			mainGroup = 5B03CCAD28EF50F000AFA693;
+			packageReferences = (
+				2012F85B2D938C7100C59781 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 5B03CCB728EF50F000AFA693 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5B03CCB528EF50F000AFA693 /* VSCO-lite-swiftui */,
 				5B15E5F728F0E95B00F90A7C /* VSCO-lite-uikit */,
+				2012F88A2D961FE500C59781 /* VSCO-lite-swiftuiTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2012F8892D961FE500C59781 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5B03CCB428EF50F000AFA693 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,24 +315,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B15E60728F0E95C00F90A7C /* LaunchScreen.storyboard in Resources */,
-				5B15E60428F0E95C00F90A7C /* Assets.xcassets in Resources */,
-				5B15E60228F0E95B00F90A7C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2012F8872D961FE500C59781 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5B03CCB228EF50F000AFA693 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5B4B786628F7830B0096A395 /* URRequest.swift in Sources */,
+				2012F8572D9375A900C59781 /* FlickrError.swift in Sources */,
+				2012F8492D922B4200C59781 /* PhotoGrid.swift in Sources */,
+				2012F8532D93736F00C59781 /* FlickrPhotosInfoResponse.swift in Sources */,
 				5B9C9F4128EF8016004442E3 /* DataProvider.swift in Sources */,
-				5B03CCBC28EF50F000AFA693 /* MainView.swift in Sources */,
+				2012F8472D9227A300C59781 /* Photo.swift in Sources */,
+				5B03CCBC28EF50F000AFA693 /* PhotoSearchView.swift in Sources */,
+				2012F84D2D922C0900C59781 /* PhotoGridCellImageContainer.swift in Sources */,
 				5B03CCBA28EF50F000AFA693 /* VSCOLiteApp.swift in Sources */,
+				2012F84B2D922B9800C59781 /* PhotoGridCell.swift in Sources */,
 				5B9C9F4428EF8046004442E3 /* FlickrAPI.swift in Sources */,
+				2012F8552D9373B800C59781 /* FlickrPhotosResponse.swift in Sources */,
+				2012F83B2D921D6D00C59781 /* SearchBar.swift in Sources */,
+				2012F8402D921E8400C59781 /* PhotoSearchViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,10 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B15E5FF28F0E95B00F90A7C /* ViewController.swift in Sources */,
-				5B15E5FB28F0E95B00F90A7C /* AppDelegate.swift in Sources */,
 				5B15E60D28F0EA2A00F90A7C /* DataProvider.swift in Sources */,
-				5B15E5FD28F0E95B00F90A7C /* SceneDelegate.swift in Sources */,
 				5B4B786728F7830B0096A395 /* URRequest.swift in Sources */,
 				5B15E60C28F0EA2800F90A7C /* FlickrAPI.swift in Sources */,
 			);
@@ -256,26 +361,60 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		5B15E60028F0E95B00F90A7C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5B15E60128F0E95B00F90A7C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		2012F8902D961FE500C59781 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B03CCB528EF50F000AFA693 /* VSCO-lite-swiftui */;
+			targetProxy = 2012F88F2D961FE500C59781 /* PBXContainerItemProxy */;
 		};
-		5B15E60528F0E95C00F90A7C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5B15E60628F0E95C00F90A7C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		2012F8912D961FE500C59781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evanapuig.VSCO-lite-swiftuiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VSCO-lite-swiftui.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VSCO-lite-swiftui";
+			};
+			name = Debug;
+		};
+		2012F8922D961FE500C59781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evanapuig.VSCO-lite-swiftuiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VSCO-lite-swiftui.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VSCO-lite-swiftui";
+			};
+			name = Release;
+		};
 		5B03CCC228EF510800AFA693 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -503,6 +642,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2012F8932D961FE500C59781 /* Build configuration list for PBXNativeTarget "VSCO-lite-swiftuiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2012F8912D961FE500C59781 /* Debug */,
+				2012F8922D961FE500C59781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5B03CCB128EF50F000AFA693 /* Build configuration list for PBXProject "VSCO-lite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -531,6 +679,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2012F85B2D938C7100C59781 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2012F85C2D938C7100C59781 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2012F85B2D938C7100C59781 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5B03CCAE28EF50F000AFA693 /* Project object */;
 }
