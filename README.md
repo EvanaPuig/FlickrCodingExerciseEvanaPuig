@@ -3,9 +3,14 @@
 ## Author: Evana Margáin Puig
 Company: Xteam
 
+Demo:
+
+https://github.com/user-attachments/assets/45c041d9-2fc8-45e5-bfb1-a8210c30cd6c
+
 ---
 
 ## UI Choice
+
 SwiftUI was chosen for the development of this app as it is in line with the current trends in iOS development and is Apple's preferred method. In the working branch I have deleted the UIKit code.
 
 ## Git
