@@ -9,7 +9,7 @@ Company: Xteam
 SwiftUI was chosen for the development of this app as it is in line with the current trends in iOS development and is Apple's preferred method. In the working branch I have deleted the UIKit code.
 
 ## Git
-As shown in this repository, Git was chosen. I have created this branch and labeled it 'brute_force_solution' in order to demonstrate how the development of a feature would have been done in a production app.
+As shown in this repository, Git was chosen. I have created this branch and labeled it 'flickr_app_mvp' in order to demonstrate how the development of a feature would have been done in a production app. As well as created a Pull Request and merged it to simulate the development process.
 
 ## Tests
 To demonstrate the use of tests in production apps, I have created the /VSCO-lite-swiftuiTests directory, which has PhotoSearchViewModelTests.swift, which has some ViewModel tests that, although not exhaustive, show how tests would be made in a production app. 
